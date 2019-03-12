@@ -8,7 +8,6 @@ public class GameOfLife extends JFrame {
 
   private static final int FRAME_HEIGHT = 1401;
   private static final int FRAME_WIDTH = 783;
-  private static final double SECONDS_FACTOR = 1000000000;
 
   public GameOfLife() {
     add(new GameOfLifePanel()); // create an instance of the panel class
