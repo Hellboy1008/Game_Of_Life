@@ -8,10 +8,11 @@ public class GameOfLife extends JFrame {
 
   private static final int FRAME_HEIGHT = 1401;
   private static final int FRAME_WIDTH = 783;
+  private static final String TITLE = "Game of Life";
 
   public GameOfLife() {
     add(new GameOfLifePanel()); // create an instance of the panel class
-    setTitle("Game of Life"); // name of game
+    setTitle(TITLE); // name of game
     setSize(FRAME_HEIGHT, FRAME_WIDTH); // size of frame (actual screen size: 1400 x 760)
     setLocationRelativeTo(null); // centers the game on the frame
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // exits the application when the close button is selected

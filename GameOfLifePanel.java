@@ -10,9 +10,6 @@ import java.util.Timer;
 public class GameOfLifePanel extends JPanel {
 
   private int[][] individualCells = new int[140][76];
-  private int[] cornerCellValues = new int[3];
-  private int[] sideCellValues = new int[5];
-  private int[] middleCellValues = new int[8];
   private static final double FIFTY_PERCENT = 0.5;
   private static final int REPEAT_TIMER = 100;
   private static final int CELL_SIZE = 10;
@@ -77,6 +74,10 @@ public class GameOfLifePanel extends JPanel {
 
   // checks cell status and updates the values
   private void checkCellStatus() {
+    int[] cornerCellValues = new int[3];
+    int[] sideCellValues = new int[5];
+    int[] middleCellValues = new int[8];
+
     for (int i = 0; i < individualCells.length; i++) {
       for (int j = 0; j < individualCells[i].length; j++) {
         int numberOfAlive = 0;
