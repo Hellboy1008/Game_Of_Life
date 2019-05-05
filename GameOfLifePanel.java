@@ -1,5 +1,10 @@
 
-//龍ONE
+/**
+ * Created by: 龍ONE
+ * Date Created: October 16, 2018
+ * Date Edited: May 4, 2019
+ * Purpose: Run the backend code for Conway's Game of Life.
+ */
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -9,6 +14,7 @@ import java.util.Timer;
 
 public class GameOfLifePanel extends JPanel {
 
+  private static final long serialVersionUID = 26399321;
   private int[][] individualCells = new int[140][76];
   private static final double FIFTY_PERCENT = 0.5;
   private static final int REPEAT = 100;
