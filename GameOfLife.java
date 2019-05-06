@@ -2,7 +2,7 @@
 /**
  * Created by: 龍ONE
  * Date Created: October 16, 2018
- * Date Edited: May 4, 2019
+ * Date Edited: May 5, 2019
  * Purpose: Run Conway's Game of Life on Java graphics.
  */
 
@@ -47,13 +47,27 @@ public class GameOfLife extends JFrame {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
   }
 
+  /**
+   * The main method runs Conway's Game of Life using a runnable class.
+   * 
+   * @param args The argument given to the main method
+   * @return None
+   */
   public static void main(String[] args) {
-    EventQueue.invokeLater(new Runnable() { // create new runnable class
+    // create a new runnable class to execute the game
+    EventQueue.invokeLater(new Runnable() {
 
       @Override
+      /**
+       * This method runs the game by creating an object of the class.
+       * 
+       * @param None
+       * @return None
+       */
       public void run() {
-        GameOfLife game = new GameOfLife(); // create an object of the class itself
-        game.setVisible(true); // make game visible
+        // create an instance of the class and make the game visible
+        GameOfLife game = new GameOfLife();
+        game.setVisible(true);
       }
     });
   }
